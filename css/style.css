@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+*{
+box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    line-height: 1;
+font-family: 'Poppins', sans-serif;
+background: #08080a;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #242424;
+}
+
+.ro-burger-menu{
+    display: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.ro-nav-ul{
+    display: inline;
+}
+
+.ro-box-work, a, .ro-linkedin, .ro-up-button{
+    transition: all 150ms ease-in-out;
+}
+
+header{
+    width: 100%;
+    height: 14vh;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+}
+
+.ro-up-button{
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    box-shadow: 0px 8px 47px 3px rgba(0,0,0,0.15);
+}.ro-up-button:hover{
+    background-color: #be81fb;
+}
+
+.ro-linkedin{
+    width: 24px;
+    padding: 24px;
+    box-sizing: content-box;
+    cursor: pointer;
+}.ro-linkedin:hover{
+    opacity: .8;
+}
+
+ul{
+    list-style-type: none;
+    width: 14%;
+}
+.ro-nav-a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}.ro-nav-a:hover{
+    color: #be81fb;
+}
+
+
+/*Flexbox Alignaments*/
+.ro-h-space-between{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ro-h-flex-start{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/*Fontsize*/
+h1{
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+.ro-max-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ro-container-blocks{
+    width: 100%;
+}
+
+.ro-160-spacing{ width: 100%; height: 160px;}
+.ro-80-spacing{ width: 100%; height: 80px;}
+.ro-40-spacing{ width: 100%; height: 40px;}
+
+.ro-section-one{
+    width: 100%;
+    padding: 96px 0 140px 0;
+}
+
+.ro-me-text-container{
+    width: 50%;
+}
+
+.ro-me-pic{
+    width: 35%;
+    border-radius: 8px;
+}
+
+
+.ro-section-works{
+    width: 100%;
+    padding: 0 0 140px 0;
+}
+
+.ro-box-work{
+    width: 48%;
+    height: 700px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    padding: 40px;
+    background-position: bottom center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}.ro-box-work:hover{
+    transform: scale(1.025);
+}
+
+.ro-work-p{
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: rgb(38, 38, 38);
+}
+
+.ro-link{
+    color: black;
+    padding: 4px 16px;
+    border-radius: 50px;
+}
+
+.ro-link-icon{
+    margin-left: 8px;
+}
+
+
+@media (max-width: 420px) {
+    /*Fontsize*/
+h1{
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+h3{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+    .ro-section-one{
+        padding: 24px 0 140px 0;
+    }
+    .ro-me-text-container{
+        width: 100%;
+    }
+
+    .ro-nav-ul{
+        display: none;
+    }
+
+    .ro-burger-menu{
+        display:inline;
+    }
+    
+    .ro-me-pic{
+        width: 70%;
+        border-radius: 8px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .ro-max-width{
+        padding: 0 24px;
+    }
+
+    .ro-box-work{
+        width: 100%;
+        height: 550px;
+        background-size: 90%;
+    }      
+    
+    .ro-160-spacing{ height: 100px;}
+    .ro-80-spacing{ height: 48px;}
+    .ro-40-spacing{ height: 24px;}
+
+    footer{
+        height: 5vh;
+    }
+
+    .ro-up-button{
+        width: 40px;
+        height: 40px;
+        bottom: 24px;
+        right: 24px;
+    }
+}

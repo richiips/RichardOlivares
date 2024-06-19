@@ -1,0 +1,66 @@
+.ro-section-text{
+    width: 100%;
+}
+
+.ro-section-text2{
+    width: 100%;
+    max-width: 780px;
+    margin: auto;
+}
+
+.ro-proyect-img-main{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
+.ro-proyect-img{
+    width: 100%;
+}
+
+.ro-proyect-desc-main{
+    width: 48%;
+}
+.ro-proyect-data-main{
+    width: 28%;
+}
+.ro-proyect-data{
+    font-weight: 500;
+}
+.ro-proyect-data2{
+    color: rgb(81, 81, 81);
+}
+
+
+.ro-sections-proyects{
+    width: 100%;
+}
+
+.ro-proyect-paragraph{
+    color: rgb(81, 81, 81);  
+    line-height: 1.7;
+}
+
+.ro-presentation-proyect{
+    align-items: flex-start;
+    margin-top: 24px;
+}
+
+@media (max-width: 420px){
+    .ro-presentation-proyect{
+        flex-flow: column wrap;
+    }
+
+    .ro-proyect-desc-main{
+        width: 100%;
+    }
+    .ro-proyect-data-main{
+        width: 100%;
+        margin-top: 64px;
+    }
+}
